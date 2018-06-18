@@ -8,6 +8,7 @@ import {NotFoundComponent} from './not-found/not-found.component';
 import {APP_BASE_HREF} from '@angular/common';
 import {HomeComponent} from './home/home.component';
 import { RoutingNotesComponent } from './routing-notes/routing-notes.component';
+import { IfdocumentComponent } from './if/ifdocument/ifdocument.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { RoutingNotesComponent } from './routing-notes/routing-notes.component';
     NotFoundComponent,
     HomeComponent,
     RoutingNotesComponent,
+    IfdocumentComponent,
   ],
   imports: [
     BrowserModule,
