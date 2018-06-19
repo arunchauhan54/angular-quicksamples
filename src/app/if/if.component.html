@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-md-12">
+      <form class="col-md-12">
+        <div *ngFor="let record of records" class="form-check">
+          <input type="checkbox" class="form-check-input" id="{{record.id}}" value="{{record.value}}"
+                 (change)="selectedRecord($event)">
+          <label for="{{record.id}}" class="form-check-label"> {{record.value}} </label>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col col-md-12">
+      <table class="table" *ngIf="selectedRecords.length >0">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Id</th>
+          <th scope="col">Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let selected of selectedRecords">
+          <th scope="row">1</th>
+          <td>{{selected.id}}</td>
+          <td>{{selected.value}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+ <app-notes [steps]="steps"></app-notes>
+</div>
+
+
+

@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li routerLinkActive="bg-danger" [routerLinkActiveOptions]="{ exact: true }">
+              <a class="nav-link" routerLink="">Home</a>
+            </li>
+            <li routerLinkActive="bg-danger">
+              <a class="nav-link" routerLink="/if">*ngIf/*ngFor</a>
+            </li>
+            <li routerLinkActive="bg-danger">
+              <a class="nav-link " routerLink="/routing">Routing</a>
+            </li>
+            <li routerLinkActive="bg-danger">
+              <a class="nav-link " routerLink="/forms">Forms</a>
+            </li>
+            <li routerLinkActive="bg-danger">
+              <a class="nav-link " routerLink="/dataPassing">Data Passing</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="{{msg}}" aria-label="Search">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
